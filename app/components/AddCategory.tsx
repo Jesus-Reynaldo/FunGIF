@@ -1,15 +1,18 @@
 'use client'
 
 import { useState } from "react"
-
-export const AddCategory = () => { 
-  const [inputValue, setinputValue] = useState('Search')
+import PropTypes from 'prop-types'
+export const AddCategory : React.FC<IProps> = ({setCategories}) => { 
+  const [inputValue, setinputValue] = useState('')
   function handleInputChange(e:any){
     setinputValue(e.target.value)
   }
   function handleSubmit(e:any){
     e.preventDefault()
-    console.log('Submit hecho!!!')
+    if(inputValue.trim().length>2){
+      setCategories((cats:string[])=>[...cats, inputValue])
+      setinputValue('')
+    }
 
   }
   return (
@@ -24,4 +27,11 @@ export const AddCategory = () => {
       />
     </form>
   )
+}
+
+interface IProps{
+  setCategories:any
+}
+AddCategory.propTypes = {
+  setCategories:PropTypes.func.isRequired
 }
