@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import {happyMonkey} from './components/fonts'
+import {happyMonkey} from './helpers/fonts'
 import './globals.css'
 
 

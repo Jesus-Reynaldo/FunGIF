@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FunGIF 
+
+![FunGIF Logo](https://i.ibb.co/qsw2jy0/FunGif.png)
+
+Welcome to FunGIF - your go-to app for exploring and discovering fun GIFs! This lightweight Next.js application utilizes the Giphy API to search and display GIFs based on different categories. Spice up your day with a touch of humor and creativity.
+
+## Features
+
+- **Dynamic Categories:** Start with default categories or add your own to tailor the GIFs to your preferences.
+- **Real-time Updates:** Instantly see GIFs related to your chosen categories without refreshing the page, thanks to the Giphy API integration.
+- **User-Friendly Interface:** The sleek design ensures a pleasant browsing experience.
 
 ## Getting Started
 
-First, run the development server:
+Follow these simple steps to get FunGIF up and running:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Clone this repository to your local machine.
+   ```bash
+   git clone https://github.com/your-username/FunGIF.git
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate to the project directory.
+   ```bash
+   cd FunGIF
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Install dependencies.
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+4. Set up your Giphy API key.
+   - Visit [Giphy Developers](https://developers.giphy.com/dashboard/) to create an account and obtain your API key.
+   - Replace `'YOUR_API_KEY'` in the `getGifs.ts` file with your actual Giphy API key.
 
-## Learn More
+5. Start the local server to preview the static site.
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+7. Open your browser and visit [http://localhost:3000](http://localhost:3000).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Usage
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+1. Explore default GIFs from the initial category (e.g., "Rick and Morty").
+2. Add your own categories using the "AddCategory" component.
+3. Watch as GIFs dynamically update based on your selected categories, powered by the Giphy API.
 
-## Deploy on Vercel
+## Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Next.js:** React framework for building static websites.
+- **React:** Front-end library for building user interfaces.
+- **Tailwind CSS:** Utility-first CSS framework for rapid UI development.
+- **Giphy API:** Integration for dynamic GIF content.
+- **Fonts:** Utilizes the "Kavoon" font for a playful and engaging title.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
+
+Contributions are welcome! Feel free to submit issues, feature requests, or pull requests to help improve FunGIF.

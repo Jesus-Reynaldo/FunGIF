@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import { AddCategory } from './AddCategory'
 import { GifGrid } from './GifGrid'
-import { kavoon } from './fonts'
+import { kavoon } from '../helpers/fonts'
 export const GifExpertApp = () => {
   const [categories, setCategories] = useState(['Rick and Morty'])
   return (

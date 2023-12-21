@@ -10,7 +10,7 @@ export const GifGrid:React.FC<IProps> = ({category}) => {
       { loading ? <p className='animate__flash'>Loading..</p> : null }
       <div className='grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6 '>
           {
-            images.map((item:any) => (
+            images?.map((item:any) => (
               <GifGridItem key={item.id} {...item} />
             ))
           }
