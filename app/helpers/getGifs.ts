@@ -1,4 +1,3 @@
-"use client"
 export const getGifs = async(category:string) => {
   try{
     const res = await fetch(`https://api.giphy.com/v1/gifs/search?api_key=h9B9xq1hCyQF72Og60OdLjfsKJLrHS4n&q=${ encodeURI(category) }`)
