@@ -10,7 +10,7 @@ export const AddCategory: React.FC<IProps> = ({ setCategories }) => {
   function handleSubmit(e: any) {
     e.preventDefault();
     if (inputValue.trim().length > 2) {
-      setCategories((cats: string[]) => [...cats, inputValue]);
+      setCategories((cats: string[]) => [inputValue, ...cats, ]);
       setinputValue("");
     }
   }
